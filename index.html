@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Portfolio_20241224</title>
+	<title>ポートフォリオDemo</title>
 	<style>
 		html,
 		body {
@@ -47,13 +47,13 @@
 		<script>
 			var canvas = document.querySelector("#unity-canvas");
 			var config = {
-				dataUrl: "Build/WebGLPage.data.br",
-				frameworkUrl: "Build/WebGLPage.framework.js.br",
-				codeUrl: "Build/WebGLPage.wasm.br",
+				dataUrl: "Build/WebGLPage.data",
+				frameworkUrl: "Build/WebGLPage.framework.js",
+				codeUrl: "Build/WebGLPage.wasm",
 				streamingAssetsUrl: "StreamingAssets",
-				companyName: "DefaultCompany",
-				productName: "Portfolio_20241224",
-				productVersion: "1.0",
+				companyName: "mi-non",
+				productName: "ポートフォリオDemo",
+				productVersion: "0.0",
 			};
 			var scaleToFit;
 			try {
@@ -75,7 +75,7 @@
 					w = window.innerWidth;
 					h = window.innerHeight;
 
-					var r = 600 / 960;
+					var r = 720 / 960;
 
 					if (w * r > window.innerHeight) {
 						w = Math.min(w, Math.ceil(h / r));
@@ -83,7 +83,7 @@
 					h = Math.floor(w * r);
 				} else {
 					w = 960;
-					h = 600;
+					h = 720;
 				}
 
 				container.style.width = canvas.style.width = w + "px";
